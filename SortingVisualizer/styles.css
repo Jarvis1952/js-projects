@@ -1,0 +1,28 @@
+*{
+    padding: 0%;
+    margin: 5px;
+}
+
+body{
+    background-color: #212b36 !important;
+}
+
+
+.heading{
+    text-align: center;
+    color: aliceblue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#bars{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.slider-text{
+    color: aliceblue;
+    margin-bottom: 0px;
+}
