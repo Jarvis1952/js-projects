@@ -2,7 +2,7 @@ const apiKey = "de6bbada1893621d93ba8101fff30f82"
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?units=metric"
 
 async function checkWeather(city){
-    const response = await fetch(apiURL + `&q=${city}` + `&appid=${apiKey}`);
+    const response = await fetch(`${apiURL}&q=${city}&appid=${apiKey}`);
     if(response.status != 200){
         document.querySelector('.error').style.display = "block";
         document.querySelector('.weather').style.display = "none";
@@ -13,7 +13,7 @@ async function checkWeather(city){
     document.querySelector('.temp').innerHTML = `${Math.round(data.main.temp)}°C`;
     document.querySelector('.humidity').innerHTML = `${data.main.humidity}%`;
     document.querySelector('.wind').innerHTML = `${data.wind.speed} Km/h`;
-    document.querySelector('.weather').style.display = "inline-block";
+    document.querySelector('.weather').style.display = "block";
     document.querySelector('.error').style.display = "none";
 
     
